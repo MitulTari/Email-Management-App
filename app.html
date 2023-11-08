@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo Task xyx</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header><h1>Email Management App</h1></header>
+
+    <div class="userInput">
+      <input type="text" name="user" />
+      <button id="add-btn">ADD</button>
+    </div>
+    <br />
+
+    send from <br />
+    <br />
+
+    <label for="from">FROM : </label>
+    <select id="user-list" onchange="selectUserHandler()"></select>
+    <br /><br />
+
+    <label for="to">TO : </label>
+    <select id="toUser-list" onchange="selectToUserHandler()"></select>
+    <br />
+    <br />
+
+    <label for="subject">SUBJECT : </label>
+    <input type="text" value="" /> <br />
+    <br />
+
+    <label for="to">MESSAGE : </label>
+    <input type="text" value="" style="height: 100px" /> <br />
+    <br />
+
+    <button id="submit-btn">Send</button>
+    <br />
+    <br />
+
+    <form id="checkInbox">
+      Check Inbox <br />
+      <br />
+
+      <label for="For">For : </label>
+      <select id="check-inbox"></select>
+      <br /><br />
+      <table border="1px" id="tablebody1"></table>
+      <br /><br />
+
+      Favourite Email List : <br /><br />
+
+      <table border="1px" id="tablebody2"></table>
+    </form>
+  </body>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="app.css" />
+</html>
